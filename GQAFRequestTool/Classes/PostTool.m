@@ -14,7 +14,7 @@ NSInteger const Interval = 3;
 //[mgr.requestSerializer setValue: @"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
 
 //[mgr.requestSerializer setValue:@"Basic YXJtbzphcm1vX3NlY3JldA==" forHTTPHeaderField:@"Authorization"];
-+ (void)PostWithURL:(NSString *)url Params:(NSDictionary *)params success:(SuccessBlock)success failure:(FailureBlock)failure{
++ (void)PostWithURL:(NSString *)url Params:(NSDictionary *)params success:(SuccessBlock)success failure:(FailureBlock)failure With:(UIViewController *)VC{
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
     [request setHTTPMethod:@"POST"];
     //设置本次请求的数据请求格式
@@ -44,7 +44,7 @@ NSInteger const Interval = 3;
     [task resume];
     
 }
-+ (void)PostWithJSONDataURL:(NSString *)url Params:(NSDictionary *)params success:(SuccessBlock)success failure:(FailureBlock)failure{
++ (void)PostWithJSONDataURL:(NSString *)url Params:(NSDictionary *)params success:(SuccessBlock)success failure:(FailureBlock)failure With:(UIViewController *)VC{
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
     [request setHTTPMethod:@"POST"];
     NSData * jsonData = [NSJSONSerialization dataWithJSONObject:params options:NSJSONWritingPrettyPrinted error:nil];
@@ -75,7 +75,7 @@ NSInteger const Interval = 3;
     }];
     [task resume];
 }
-+ (void)PostWithHeadFileURL:(NSString *)url Params:(NSDictionary *)params value:(NSString *)value success:(SuccessBlock)success failure:(FailureBlock)failure{
++ (void)PostWithHeadFileURL:(NSString *)url Params:(NSDictionary *)params value:(NSString *)value success:(SuccessBlock)success failure:(FailureBlock)failure With:(UIViewController *)VC{
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]];
     [request setHTTPMethod:@"POST"];
     //设置本次请求的数据请求格式

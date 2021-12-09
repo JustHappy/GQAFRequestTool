@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GQAFRequestTool'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = '一款基于AFNetWorking的网络请求框架的封装.'
 
 # This description is used to generate tags and improve search results.
