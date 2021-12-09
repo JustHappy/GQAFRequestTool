@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: 一款基于AFNetWorking的网络请求框架的封装,需要AFNetworking 4.0.1版本.
+一款基于AFNetWorking的网络请求框架的封装,需要AFNetworking 4.0.1版本.
                        DESC
 
   s.homepage         = 'https://github.com/JustHappy/GQAFRequestTool'
