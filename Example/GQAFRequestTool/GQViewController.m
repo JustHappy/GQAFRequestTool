@@ -7,6 +7,7 @@
 //
 
 #import "GQViewController.h"
+#import <AFNetworking.h>
 
 @interface GQViewController ()
 

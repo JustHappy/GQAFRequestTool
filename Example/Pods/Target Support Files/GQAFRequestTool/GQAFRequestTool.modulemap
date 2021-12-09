@@ -1,0 +1,6 @@
+framework module GQAFRequestTool {
+  umbrella header "GQAFRequestTool-umbrella.h"
+
+  export *
+  module * { export * }
+}
